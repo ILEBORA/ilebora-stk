@@ -343,26 +343,11 @@ class STKPushScreen extends StatelessWidget {
 	 }
 
 	Widget _showVersion(){
-		return const Text(
+		//TODO:: fetch package current version
+    
+    return const Text(
 					'v0.0.1',
 					style: TextStyle(fontSize: 12.0, textBaseline: TextBaseline.alphabetic),
 				);
-		// return FutureBuilder<PackageInfo>(
-		// 	future: PackageInfo.fromPlatform(),
-		// 	builder: (context, snapshot) {
-		// 		if (snapshot.connectionState == ConnectionState.waiting) {
-		// 			return const CircularProgressIndicator(); 
-		// 		}
-
-		// 		if (snapshot.hasError) {
-		// 			print('Error: ${snapshot.error}');
-		// 			return Text('Error: ${snapshot.error}');
-		// 		}
-
-		// 		final packageInfo = snapshot.data;
-
-		// 		return Text('Package Version: ${packageInfo?.version}');
-		// 	},
-		// 	);
 	}
 }

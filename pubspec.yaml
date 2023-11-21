@@ -1,5 +1,5 @@
 name: ilebora_stk
-description: A new Flutter package project.
+description: BoraSTK is a Flutter package for simplified integration of Safaricom's Lipa Na M-Pesa Online API, enabling seamless STK push payments in mobile applications.
 license: MIT
 version: 0.0.1
 homepage:
